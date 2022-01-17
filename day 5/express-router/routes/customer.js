@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('This is get request for customer');
+    const customerId = req.query.id;
+    const customerName = req.query.name;
+    res.send(`This is get request for customer with id: ${customerId} and name: ${customerName}`);
 });
 router.post('/',(req,res)=>{
     res.send('This is post request for customer');
