@@ -1,0 +1,26 @@
+[
+  {
+    "id": 3,
+    "firstName": "Subash3",
+    "lastName": "Adhikari3",
+    "address": "Satdobato3"
+  },
+  {
+    "id": 2,
+    "firstName": "Subash2",
+    "lastName": "Adhikari2",
+    "address": "Satdobato2"
+  },
+  {
+    "id": 1,
+    "firstName": "Subash1",
+    "lastName": "Adhikari1",
+    "address": "Satdobato1"
+  },
+  {
+    "id": 1,
+    "firstName": "Subash4",
+    "lastName": "Adhikari4",
+    "address": "Satdobato4"
+  }
+]
