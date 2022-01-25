@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display Webcam Stream</title>
+    <style>
+      #container {
+        margin: 0px auto;
+        width: 500px;
+        height: 375px;
+        border: 10px #333 solid;
+      }
+      #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div id="container">
+        <video id="videoElement" autoplay="true">
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <canvas id="canvas" width="500" height="375"></canvas>
+      </div>
+      <button onclick="stop()">STOP</button>
+      <h1 id="counter"></h1>
+    </div>
+    <script src="/indexScript"></script>
+  </body>
+</html>
