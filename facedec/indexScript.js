@@ -62,7 +62,7 @@ async function postData(url="",data){
   const response = await fetch(url,{
     method:'POST',
     headers: {
-      "Ocp-Apim-Subscription-Key": "5953517d919b4b6e9b39d6297c97cc89",
+      "Ocp-Apim-Subscription-Key": yourSubscriptionKey,
       "Content-Type": "application/octet-stream"
     },
     body: data
