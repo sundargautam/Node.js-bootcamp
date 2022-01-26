@@ -1,0 +1,26 @@
+[
+  {
+    "username": "aaditya",
+    "password": "$2b$10$.Iifhj2422RkVxXr142aAeSPr7nZq8G9g4eo5ExLvEOWipucqUii6"
+  },
+  {
+    "username": "subash",
+    "password": "$2b$10$yc07LqCauKIjdmSCUGY4b.G5SUKfWwrAUhu5CHJRTHst1mCQiiUgi",
+    "address": "satdobato",
+    "name": "Subash Adhikari"
+  },
+  {
+    "username": "gayatri",
+    "password": "$2b$10$7Y9zlqNAhfIpaSPtCF8vA.LaGOn1gvb/xelro3dZdqnyNMaqYNtXm",
+    "address": "satdobato",
+    "name": "Gayatri Budha"
+  },
+  {
+    "username": "archana",
+    "password": "$2b$10$aN.w4kE2vYx8TdVicIS1/uBQ83412yhB2VJRvSox6vkmS3zQ2G0Ae"
+  },
+  {
+    "username": "archana1",
+    "password": "$2b$10$hphEe3G0YzmeDgk8imac2eqooLYUJGDof0MmV5/FGfIN8UJUIEsJK"
+  }
+]
