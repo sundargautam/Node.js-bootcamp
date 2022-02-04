@@ -3,7 +3,6 @@ import express from 'express';
 import bcrypt from 'bcrypt';
 import fs from 'fs';
 import jwt from 'jsonwebtoken';
-
 const router = express.Router();
 
 const VERY_SECRET_KEY = 'verysecretkey';
