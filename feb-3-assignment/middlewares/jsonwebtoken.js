@@ -3,19 +3,20 @@ import 'dotenv/config';
 
 //verify incoming JWT token is valid one
 function jwtVerify (req, res, next) {
-    console.log(req.url);
-    if (req.url == 'login' || req.url == 'signup') {
+
+    console.log(req);
+
+    let unprotectedRoutes = ['/api/login', '/api/signup','/','/signup','/login'];
+    if (unprotectedRoutes.indexOf(req.url)> -1) {
         next();
         return;
     }
 
-    let authorization = req.headers.authorization;
-    if (!authorization) {
+    let token = req.cookies.token;
+    if (!token) {
         res.status(403).send('No token provided');
         return;
     }
-    const token = authorization.split(' ')[1];
-
     jwt.verify(token,process.env.JWT_KEY,(err,decoded)=>{
         if (err) {
             res.status(403).send(err);

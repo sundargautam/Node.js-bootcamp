@@ -7,9 +7,11 @@ import 'dotenv/config';
 const router = express.Router();
 
 router.post('/',(req,res)=>{
-    let username  = req.body.username;
-    let password = req.body.password;
+    let username  = req.body.txtUsername;
+    let password = req.body.txtPassword;
     
+    console.log(password);
+
     pool.query('select * from login where username = ?',[username],(err,results,fields)=>{
         if (err) {
             res.status(500).send(err);
@@ -34,10 +36,8 @@ router.post('/',(req,res)=>{
                 },process.env.JWT_KEY,{
                     expiresIn: '1h'
                 });
-                res.status(200).send({
-                    message: 'Login successful',
-                    token: token
-                });
+                res.cookie('token',token);
+                res.redirect('/index');
             }
             else{
                 res.status(403).send('Invalid username or password'); // password is not correct
